@@ -10,10 +10,18 @@
             <button hx-get="/preview" hx-target="#data-table" hx-swap="innerHTML">
                 Show First 10 Rows
             </button>
+
+            <button hx-get="/mean" hx-target="#mean-text" hx-swap="innerHTML"> See Mean of Ages </button>
+            <span style="color: white;"  id="mean-text"></span>
         </div>
+
+
         <div class="prev-table">
             <div id="data-table"></div>
         </div>
+
+
+
 
     </div>
 </body>
