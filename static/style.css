@@ -1,0 +1,70 @@
+body{
+    padding:0;
+    margin: 0px;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Noto Sans", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+    background-color: black;
+}
+
+.maintext-holder
+{
+    height: 100vh;
+    display: flex;
+
+    flex-direction: column;
+
+
+}
+.prev-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+button{
+    width: 200px;
+    margin:10px;
+    border-radius: 30px;
+    font-size: 15px;
+    padding:5px;
+    background-color: rgb(35, 35, 35);
+    border: 2px solid white;
+    color: white;
+}
+
+button:hover{
+    color: yellow;
+}
+
+.heading
+{
+    margin-top: 50px;
+    width: 100% ;
+    font-size: 80px;
+    font-weight: 800;
+
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.sub-heading{
+    color: white;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+table, th, td {
+  
+    color: white; /* or lightgray */
+    border-radius: 20px;
+    background-color: rgb(77, 77, 77);
+}
+
+.prev-table{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,20 @@
+{% extends 'base.html.j2'%}
+{% block content%}
+
+<body>
+    <div class="maintext-holder">
+        <div class="heading"> Titanic Survivor Analysis</div>
+        <div class="sub-heading"> using Pandas, MatPlotLib</div>
+
+        <div class="prev-button">
+            <button hx-get="/preview" hx-target="#data-table" hx-swap="innerHTML">
+                Show First 10 Rows
+            </button>
+        </div>
+        <div class="prev-table">
+            <div id="data-table"></div>
+        </div>
+
+    </div>
+</body>
+{% endblock%}
