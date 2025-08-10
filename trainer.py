@@ -39,3 +39,23 @@ import matplotlib.pyplot as plt
 
 sns.barplot(x="Sex",y="Survived",data=df)
 plt.show()
+
+print(df.groupby("Pclass")["Survived"].mean() * 100)
+sns.barplot(x="Pclass",y="Survived",data=df)
+plt.show()
+
+
+df["AgeGroup"] = pandas.cut(df["Age"], bins=[0,12,18,35,50,80], labels=["Child", "Teen", "Young Adult", "Adult", "Senior"])
+
+print(df.groupby("Age")["Survived"].mean() * 100)
+sns.barplot(x='AgeGroup',y="Survived",data=df)
+plt.show()
+
+
+# SHowing Probability
+P_female = df[df["Sex"] == "female"]["Survived"].mean()
+print(f"Female survival probability: { round(P_female*100 )}")
+
+P_male = df[df['Sex'] == "male"]["Survived"].mean()
+print(round(P_male*100))
+
